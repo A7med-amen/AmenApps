@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+    <data>
+        <record id="view_inherit_purchase_cancel_form" model="ir.ui.view">
+            <field name="name">view.purchase.cancel.form</field>
+            <field name="model">purchase.order</field>
+            <field name="inherit_id" ref="purchase.purchase_order_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//button[@name='button_cancel']" position="before">
+                    <button name="action_cancel_purchase_order" states="purchase" string="Cancel PO" type="object" groups="purchase.group_purchase_manager" attrs="{'invisible': ['|', '|' , ('is_shipped', '=', False), ('picking_count', '=', 0), ('invoice_count', '>', 0)]}"  />
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

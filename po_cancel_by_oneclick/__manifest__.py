@@ -3,21 +3,20 @@
 
 
 {
-    "name":"Cancel Purchase Order",
-    "summary":"Cancel PO and Bill and Return Picking",
+    "name":"Cancel Confirmed PO / BILL",
+    "summary":"Cancel Confirmed PO and Bill and Return Picking",
 'description': """
-    *   This addon help you ( By One Click ) to cancel PO and it's Bill and make picking return 
+    *   This addon help you ( By One Click ). \n
+     1- Cancel Confirmed PO. \n 
+     2- Cancel Validated Or paid Vendor Bill. \n 
+     3- Make picking return. \n 
     """,
     "version":"11.2.0.1",
     "category":"Purchase",
     "author":"Ahmed Amen",
-    "license":"AGPL-3",
+    'license': 'LGPL-3',
     "application":False,
     "installable":True,
-    'license': 'OPL-1',
-    'currency': 'EUR',
-    'price': 10.0,
-
     "depends":['purchase','base'],
     "data":[
         "security/purchase_security.xml",

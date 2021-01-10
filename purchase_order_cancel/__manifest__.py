@@ -18,9 +18,7 @@
     'currency': 'EUR',
     'price': 10.0,
 
-    "depends":[
-        "purchase",
-    ],
+    "depends":['purchase','base'],
     "data":[
         "security/purchase_security.xml",
         "views/purchase_view.xml",

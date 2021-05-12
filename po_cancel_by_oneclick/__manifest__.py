@@ -22,7 +22,7 @@
         "security/purchase_security.xml",
         "views/purchase_view.xml",
     ],
-    'images': ['static/description/icon.png'],
+    'images': ['static/description/logo.png'],
     "demo":[
     ],
 }
